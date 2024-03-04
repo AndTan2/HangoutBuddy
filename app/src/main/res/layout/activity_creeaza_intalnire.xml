@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreeazaIntalnire">
+
+    <TextView
+        android:id="@+id/simpleTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="21dp"
+        android:text="Selecteaza ora intalnirii"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="85px"
+        app:layout_constraintBottom_toTopOf="@+id/simpleTimePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/simpleTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTextView" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Confirmare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locatie" />
+
+
+    <TextView
+        android:id="@+id/simpleTextView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:text="Selecteaza"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTimePicker" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/locatie"
+        app:layout_constraintStart_toStartOf="@+id/locatie"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTextView2">
+
+
+        <RadioButton
+            android:id="@+id/male_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Barbat"
+            app:layout_constraintStart_toEndOf="@id/female_button"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <RadioButton
+            android:id="@+id/female_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="Femeie"
+            app:layout_constraintStart_toEndOf="@id/any_button"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <RadioButton
+            android:id="@+id/any_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="Oricare"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="462dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/locatie"
+        android:layout_width="410dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="117dp"
+        android:hint="adauga locatia"
+        android:paddingTop="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirm"
+        app:layout_constraintStart_toStartOf="@+id/descriere"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/descriere"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:hint="descrie intalnirea"
+        android:paddingTop="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locatie" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inapoi"
+        android:onClick="inapoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

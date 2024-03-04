@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "881924736544",
+    "project_id": "sdafoodbuddy",
+    "storage_bucket": "sdafoodbuddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881924736544:android:28529d9b009e912f055e45",
+        "android_client_info": {
+          "package_name": "com.example.sdafoodbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881924736544-0v9t1l2u6ho9vatplc7ahes1983tdmfc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sdafoodbuddy",
+            "certificate_hash": "dee1fc98891355aa051e8f11a7e84fbea105a5a8"
+          }
+        },
+        {
+          "client_id": "881924736544-vb19vl45a9imrnfr46f8dqs0nsootltk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBamuTnvWBugV2HzWZtVxVCMY9qJMewubc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881924736544-vb19vl45a9imrnfr46f8dqs0nsootltk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
